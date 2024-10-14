@@ -3583,6 +3583,12 @@ df_Main_data.head()
 </table>
 <p>5 rows × 38 columns</p>
 
+## Death Cause Analysis
+- <a href="Markdown/Death_Cause_Analysis.md" target="_blank">Death Cause Analysis</a>
+
+## Event Analysis
+- <a href="Markdown/Event_Analysis.md" target="_blank">Event Analysis</a>
+
 ## Summary
 **สรุปภาพรวมการวิเคราะห์ข้อมูลการเสียชีวิตทั่วโลก (1990-2019)**
 

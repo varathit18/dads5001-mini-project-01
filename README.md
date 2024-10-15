@@ -126,22 +126,6 @@ https://www.macrotrends.net/global-metrics/countries/TWN/taiwan/population
     memory usage: 1.6+ MB
 
 <b>Example data cause of death</b>
-
-  <div id="df-c038362d-8990-47b3-9ac0-3c692107364c" class="colab-df-container">
-    <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">

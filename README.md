@@ -35,11 +35,6 @@
       <ul>
         <li>
           <a href="#detail-of-event-during-1990---2019">Detail of Event during 1990 - 2019</a>
-          <ul>
-            <li><a href="#make-time-line-for-the-event-during-1990---2019
-">Make time line for the Event during 1990 - 2019
-</a></li>
-      </ul>
         </li>
         <li>
           <a href="#event-for-analyze">Event for analyze</a>
@@ -3694,8 +3689,6 @@ Events that Decreased Mortality Rates:
 2. **Reduction in Maternal and Infant Mortality Rates (2000s)**: Increased investments in maternal and infant health programs led to lower mortality rates.[WHO - Thailand UHC](https://www.who.int/news/item/09-05-2023-global-progress-in-tackling-maternal-and-newborn-deaths-stalls-since-2015--un)
 3. **Decrease in Malaria Deaths (2000s)**: Malaria prevention campaigns, especially in border areas, significantly reduced malaria-related deaths.[Malaria in Thailand](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6553898/)
 4. **Advances in Treatment and Prevention of Cardiovascular Diseases (1990s)**: Improved treatment methods and anti-smoking campaigns in the 2000s contributed to reduced mortality rates from cardiovascular diseases.[WHO - Cardiovascular Diseases](https://www.who.int/health-topics/cardiovascular-diseases)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <b>Make time line for the Event during 1990 - 2019</b>
 

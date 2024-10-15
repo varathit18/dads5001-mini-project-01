@@ -125,7 +125,7 @@ https://www.macrotrends.net/global-metrics/countries/TWN/taiwan/population
     dtypes: int64(32), object(2)
     memory usage: 1.6+ MB
 
-<b>First five recoreds</b>
+<b>Example data cause of death</b>
 
   <div id="df-c038362d-8990-47b3-9ac0-3c692107364c" class="colab-df-container">
     <div>
@@ -319,7 +319,8 @@ https://www.macrotrends.net/global-metrics/countries/TWN/taiwan/population
            'THA', 'TLS', 'TGO', 'TKL', 'TON', 'TTO', 'TUN', 'TUR', 'TKM',
            'TUV', 'UGA', 'UKR', 'ARE', 'GBR', 'USA', 'VIR', 'URY', 'UZB',
            'VUT', 'VEN', 'VNM', 'YEM', 'ZMB', 'ZWE'], dtype=object)
-    Total: 204
+
+  <b>Total Unique:</b> 204 contries
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -347,11 +348,16 @@ https://www.macrotrends.net/global-metrics/countries/TWN/taiwan/population
     dtypes: float64(2), int64(1), object(6)
     memory usage: 17.6+ KB
 
+<b>Example data continent</b>
+![png](Markdown/Import_Data_files/example_data_continent.png)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### World Population
 
 <b>Dataset:</b> <a href="https://github.com/imyajaii/dads5001-mini-project-01/blob/develop/dataset/World-population-by-countries-dataset.csv" target="_blank">World Population</a>
+
+<b>DataFrame Info</b>
 
     <class 'pandas.core.frame.DataFrame'>
     RangeIndex: 266 entries, 0 to 265
@@ -425,6 +431,159 @@ https://www.macrotrends.net/global-metrics/countries/TWN/taiwan/population
     dtypes: float64(62), object(2)
     memory usage: 133.1+ KB
 
+<b>Example data world population</b>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country Name</th>
+      <th>Country Code</th>
+      <th>1960</th>
+      <th>1961</th>
+      <th>1962</th>
+      <th>1963</th>
+      <th>1964</th>
+      <th>1965</th>
+      <th>1966</th>
+      <th>1967</th>
+      <th>...</th>
+      <th>2012</th>
+      <th>2013</th>
+      <th>2014</th>
+      <th>2015</th>
+      <th>2016</th>
+      <th>2017</th>
+      <th>2018</th>
+      <th>2019</th>
+      <th>2020</th>
+      <th>2021</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Aruba</td>
+      <td>ABW</td>
+      <td>54208.0</td>
+      <td>55434.0</td>
+      <td>56234.0</td>
+      <td>56699.0</td>
+      <td>57029.0</td>
+      <td>57357.0</td>
+      <td>57702.0</td>
+      <td>58044.0</td>
+      <td>...</td>
+      <td>102565.0</td>
+      <td>103165.0</td>
+      <td>103776.0</td>
+      <td>104339.0</td>
+      <td>104865.0</td>
+      <td>105361.0</td>
+      <td>105846.0</td>
+      <td>106310.0</td>
+      <td>106766.0</td>
+      <td>107195.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Africa Eastern and Southern</td>
+      <td>AFE</td>
+      <td>130836765.0</td>
+      <td>134159786.0</td>
+      <td>137614644.0</td>
+      <td>141202036.0</td>
+      <td>144920186.0</td>
+      <td>148769974.0</td>
+      <td>152752671.0</td>
+      <td>156876454.0</td>
+      <td>...</td>
+      <td>547482863.0</td>
+      <td>562601578.0</td>
+      <td>578075373.0</td>
+      <td>593871847.0</td>
+      <td>609978946.0</td>
+      <td>626392880.0</td>
+      <td>643090131.0</td>
+      <td>660046272.0</td>
+      <td>677243299.0</td>
+      <td>694665117.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Afghanistan</td>
+      <td>AFG</td>
+      <td>8996967.0</td>
+      <td>9169406.0</td>
+      <td>9351442.0</td>
+      <td>9543200.0</td>
+      <td>9744772.0</td>
+      <td>9956318.0</td>
+      <td>10174840.0</td>
+      <td>10399936.0</td>
+      <td>...</td>
+      <td>31161378.0</td>
+      <td>32269592.0</td>
+      <td>33370804.0</td>
+      <td>34413603.0</td>
+      <td>35383028.0</td>
+      <td>36296111.0</td>
+      <td>37171922.0</td>
+      <td>38041757.0</td>
+      <td>38928341.0</td>
+      <td>39835428.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Africa Western and Central</td>
+      <td>AFW</td>
+      <td>96396419.0</td>
+      <td>98407221.0</td>
+      <td>100506960.0</td>
+      <td>102691339.0</td>
+      <td>104953470.0</td>
+      <td>107289875.0</td>
+      <td>109701811.0</td>
+      <td>112195950.0</td>
+      <td>...</td>
+      <td>370243017.0</td>
+      <td>380437896.0</td>
+      <td>390882979.0</td>
+      <td>401586651.0</td>
+      <td>412551299.0</td>
+      <td>423769930.0</td>
+      <td>435229381.0</td>
+      <td>446911598.0</td>
+      <td>458803476.0</td>
+      <td>470898870.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Angola</td>
+      <td>AGO</td>
+      <td>5454938.0</td>
+      <td>5531451.0</td>
+      <td>5608499.0</td>
+      <td>5679409.0</td>
+      <td>5734995.0</td>
+      <td>5770573.0</td>
+      <td>5781305.0</td>
+      <td>5774440.0</td>
+      <td>...</td>
+      <td>25107925.0</td>
+      <td>26015786.0</td>
+      <td>26941773.0</td>
+      <td>27884380.0</td>
+      <td>28842482.0</td>
+      <td>29816769.0</td>
+      <td>30809787.0</td>
+      <td>31825299.0</td>
+      <td>32866268.0</td>
+      <td>33933611.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 64 columns</p>
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- Cleansing -->
@@ -433,15 +592,41 @@ https://www.macrotrends.net/global-metrics/countries/TWN/taiwan/population
 ### Cleansing World Population
 Drop column 1960 - 1989 , 2020 , 2021 of World Population
 
-Convert  World Population of column 1990 - 2019 to be row of each of Column Country Code (the new name of column is Population) keep column Country Name
-<table border="1">
+```python
+# prompt: drop column 1960 - 1989 , 2020 , 2021 of df_population
+columns_to_drop = [str(year) for year in range(1960, 1990)] + ['2020', '2021']
+df_population = df_population.drop(columns=columns_to_drop)
+
+df_population.head()
+
+```
+
+Example data world population after drop columns
+<table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
       <th>Country Name</th>
       <th>Country Code</th>
-      <th>Year</th>
-      <th>Population</th>
+      <th>1990</th>
+      <th>1991</th>
+      <th>1992</th>
+      <th>1993</th>
+      <th>1994</th>
+      <th>1995</th>
+      <th>1996</th>
+      <th>1997</th>
+      <th>...</th>
+      <th>2010</th>
+      <th>2011</th>
+      <th>2012</th>
+      <th>2013</th>
+      <th>2014</th>
+      <th>2015</th>
+      <th>2016</th>
+      <th>2017</th>
+      <th>2018</th>
+      <th>2019</th>
     </tr>
   </thead>
   <tbody>
@@ -449,40 +634,136 @@ Convert  World Population of column 1990 - 2019 to be row of each of Column Coun
       <th>0</th>
       <td>Aruba</td>
       <td>ABW</td>
-      <td>1990</td>
       <td>62152.0</td>
+      <td>64623.0</td>
+      <td>68240.0</td>
+      <td>72495.0</td>
+      <td>76705.0</td>
+      <td>80324.0</td>
+      <td>83211.0</td>
+      <td>85450.0</td>
+      <td>...</td>
+      <td>101665.0</td>
+      <td>102050.0</td>
+      <td>102565.0</td>
+      <td>103165.0</td>
+      <td>103776.0</td>
+      <td>104339.0</td>
+      <td>104865.0</td>
+      <td>105361.0</td>
+      <td>105846.0</td>
+      <td>106310.0</td>
     </tr>
     <tr>
       <th>1</th>
       <td>Africa Eastern and Southern</td>
       <td>AFE</td>
-      <td>1990</td>
       <td>304648010.0</td>
+      <td>313394693.0</td>
+      <td>322270073.0</td>
+      <td>331265579.0</td>
+      <td>340379934.0</td>
+      <td>349605660.0</td>
+      <td>358953595.0</td>
+      <td>368440591.0</td>
+      <td>...</td>
+      <td>518468229.0</td>
+      <td>532760424.0</td>
+      <td>547482863.0</td>
+      <td>562601578.0</td>
+      <td>578075373.0</td>
+      <td>593871847.0</td>
+      <td>609978946.0</td>
+      <td>626392880.0</td>
+      <td>643090131.0</td>
+      <td>660046272.0</td>
     </tr>
     <tr>
       <th>2</th>
       <td>Afghanistan</td>
       <td>AFG</td>
-      <td>1990</td>
       <td>12412311.0</td>
+      <td>13299016.0</td>
+      <td>14485543.0</td>
+      <td>15816601.0</td>
+      <td>17075728.0</td>
+      <td>18110662.0</td>
+      <td>18853444.0</td>
+      <td>19357126.0</td>
+      <td>...</td>
+      <td>29185511.0</td>
+      <td>30117411.0</td>
+      <td>31161378.0</td>
+      <td>32269592.0</td>
+      <td>33370804.0</td>
+      <td>34413603.0</td>
+      <td>35383028.0</td>
+      <td>36296111.0</td>
+      <td>37171922.0</td>
+      <td>38041757.0</td>
     </tr>
     <tr>
       <th>3</th>
       <td>Africa Western and Central</td>
       <td>AFW</td>
-      <td>1990</td>
       <td>204803865.0</td>
+      <td>210332267.0</td>
+      <td>215976366.0</td>
+      <td>221754806.0</td>
+      <td>227692136.0</td>
+      <td>233807627.0</td>
+      <td>240114179.0</td>
+      <td>246613750.0</td>
+      <td>...</td>
+      <td>350556886.0</td>
+      <td>360285439.0</td>
+      <td>370243017.0</td>
+      <td>380437896.0</td>
+      <td>390882979.0</td>
+      <td>401586651.0</td>
+      <td>412551299.0</td>
+      <td>423769930.0</td>
+      <td>435229381.0</td>
+      <td>446911598.0</td>
     </tr>
     <tr>
       <th>4</th>
       <td>Angola</td>
       <td>AGO</td>
-      <td>1990</td>
       <td>11848385.0</td>
+      <td>12248901.0</td>
+      <td>12657361.0</td>
+      <td>13075044.0</td>
+      <td>13503753.0</td>
+      <td>13945205.0</td>
+      <td>14400722.0</td>
+      <td>14871572.0</td>
+      <td>...</td>
+      <td>23356247.0</td>
+      <td>24220660.0</td>
+      <td>25107925.0</td>
+      <td>26015786.0</td>
+      <td>26941773.0</td>
+      <td>27884380.0</td>
+      <td>28842482.0</td>
+      <td>29816769.0</td>
+      <td>30809787.0</td>
+      <td>31825299.0</td>
     </tr>
   </tbody>
 </table>
-</div>
+<p>5 rows × 32 columns</p>
+
+Convert  World Population of column 1990 - 2019 to be row of each of Column Country Code (the new name of column is Population) keep column Country Name
+
+```python
+df_population_melted = df_population.melt(id_vars=['Country Name', 'Country Code'],
+                                         var_name='Year',
+                                         value_name='Population')
+
+```
+
+DataFrame Info
 
     <class 'pandas.core.frame.DataFrame'>
     RangeIndex: 7980 entries, 0 to 7979
@@ -496,10 +777,20 @@ Convert  World Population of column 1990 - 2019 to be row of each of Column Coun
     dtypes: float64(1), object(3)
     memory usage: 249.5+ KB
 
+Example data after convert year columns to rows
+![png](Markdown/Import_Data_files/df_population_melted_sort.png)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Cleansing Continent
 Drop column contry, code_2, contry_code, iso_3166_2, region_code, sub_region_code
+
+```python
+df_continent = df_continent.drop(['country', 'code_2', 'country_code', 'iso_3166_2', 'region_code', 'sub_region_code'], axis=1)
+
+```
+
+DataFrame Info
 
     <class 'pandas.core.frame.DataFrame'>
     RangeIndex: 249 entries, 0 to 248
@@ -511,6 +802,8 @@ Drop column contry, code_2, contry_code, iso_3166_2, region_code, sub_region_cod
      2   sub_region  240 non-null    object
     dtypes: object(3)
     memory usage: 6.0+ KB
+
+Example data after drop columns
 
 <table border="1" class="dataframe">
   <thead>
@@ -560,7 +853,7 @@ Drop column contry, code_2, contry_code, iso_3166_2, region_code, sub_region_cod
 
 ### Cleansing Cause of Death
 
-#### Merge data by Country code 3 digits
+#### Merge data by country code 3 digits
 
 ```python
 # prompt: check if the column Code of df_cause_of_death was all in column code_3 of df_cintinent

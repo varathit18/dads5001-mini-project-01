@@ -1,4 +1,6 @@
 <h1>[DADS5001] Mini Project - Living death</h1>
+
+<a id="readme-top"></a>
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -28,7 +30,29 @@
       </ul>
     </li>
     <li><a href="Markdown/Death_Cause_Analysis.md" target="_blank">Death Cause Analysis</a></li>
-    <li><a href="Markdown/Event_Analysis.md" target="_blank">Event Analysis</a></li>
+    <li>
+      <a href="#event-analysis" target="_blank">Event Analysis</a>
+      <ul>
+        <li>
+          <a href="#detail-of-event-during-1990---2019">Detail of Event during 1990 - 2019</a>
+          <ul>
+            <li><a href="#make-time-line-for-the-event-during-1990---2019
+">Make time line for the Event during 1990 - 2019
+</a></li>
+      </ul>
+        </li>
+        <li>
+          <a href="#event-for-analyze">Event for analyze</a>
+          <ul>
+        <li><a href="#hiv">HIV</a></li>
+        <li><a href="#rwanda-genocide">Rwanda Genocide</a></li>
+        <li><a href="#asian-tsunami">Asian Tsunami</a></li>
+        <li><a href="#malaria">Malaria</a></li>
+        <li><a href="#diarrheal">Diarrheal</a></li>
+      </ul>
+        </li>
+      </ul>
+    </li>
     <li><a href="#summary">Summary</a></li>
   </ol>
 </details>
@@ -52,6 +76,8 @@ https://www.macrotrends.net/global-metrics/countries/TWN/taiwan/population
 4. อัตราการเสียชีวิตจากโรคเรื้อรังในภูมิภาคเอเชียตะวันออกเฉียงใต้มีแนวโน้มเป็นอย่างไร?
 5. แนวโน้มของอัตราการเปลี่ยนแปลงในการเสียชีวิตของประชากรประเทศไทยเทียบกับ เมียนมาร์ ฟิลิปปินส์ และเวียดนาม ในช่วงปี 1990 ถึง 2019 เป็นอย่างไร?
 6. เหตุการณ์สำคัญที่เกิดขึ้นในแต่ละช่วงเวลา มีความสอดคล้องและดำเนินไปในทิศทางเดียวกันกับข้อมูลจำนวนผู้เสียชีวิตหรือไม่
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- Import Data -->
 ## Import Data
@@ -300,6 +326,8 @@ https://www.macrotrends.net/global-metrics/countries/TWN/taiwan/population
            'VUT', 'VEN', 'VNM', 'YEM', 'ZMB', 'ZWE'], dtype=object)
     Total: 204
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### Continent
 
 <b>Dataset:</b> <a href="https://github.com/imyajaii/dads5001-mini-project-01/blob/develop/dataset/countryContinent.csv" target="_blank">Continent</a>
@@ -323,6 +351,8 @@ https://www.macrotrends.net/global-metrics/countries/TWN/taiwan/population
      8   sub_region_code  240 non-null    float64
     dtypes: float64(2), int64(1), object(6)
     memory usage: 17.6+ KB
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### World Population
 
@@ -400,6 +430,8 @@ https://www.macrotrends.net/global-metrics/countries/TWN/taiwan/population
     dtypes: float64(62), object(2)
     memory usage: 133.1+ KB
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- Cleansing -->
 ## Cleansing
 
@@ -468,7 +500,8 @@ Convert  World Population of column 1990 - 2019 to be row of each of Column Coun
      3   Population    7939 non-null   float64
     dtypes: float64(1), object(3)
     memory usage: 249.5+ KB
-    
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Cleansing Continent
 Drop column contry, code_2, contry_code, iso_3166_2, region_code, sub_region_code
@@ -527,6 +560,8 @@ Drop column contry, code_2, contry_code, iso_3166_2, region_code, sub_region_cod
   </tbody>
 </table>
 </div>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Cleansing Cause of Death
 
@@ -2277,6 +2312,8 @@ df_population_melted[df_population_melted['Population'].isnull()]
   </tbody>
 </table>
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### Create Main Table
 
 #### Merge all data to be main Table
@@ -2587,6 +2624,7 @@ df_Main_data
 </table>
 <p>8100 rows × 39 columns</p>
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 #### Drop Null and Duplicate columns
 ```python
@@ -2921,6 +2959,8 @@ print(column_names)
 
     ['Country/Territory', 'Code', 'continent', 'sub_region', 'Year', 'Meningitis', "Alzheimer's Disease and Other Dementias", "Parkinson's Disease", 'Nutritional Deficiencies', 'Malaria', 'Drowning', 'Interpersonal Violence', 'Maternal Disorders', 'HIV/AIDS', 'Drug Use Disorders', 'Tuberculosis', 'Cardiovascular Diseases', 'Lower Respiratory Infections', 'Neonatal Disorders', 'Alcohol Use Disorders', 'Self-harm', 'Exposure to Forces of Nature', 'Diarrheal Diseases', 'Environmental Heat and Cold Exposure', 'Neoplasms', 'Conflict and Terrorism', 'Diabetes Mellitus', 'Chronic Kidney Disease', 'Poisonings', 'Protein-Energy Malnutrition', 'Road Injuries', 'Chronic Respiratory Diseases', 'Cirrhosis and Other Chronic Liver Diseases', 'Digestive Diseases', 'Fire, Heat, and Hot Substances', 'Acute Hepatitis', 'Population']
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 #### Rename Columns
 
 ```python
@@ -3092,6 +3132,8 @@ print(column_names)
 ```
 
     ['Country', 'Code', 'Continent', 'Sub_region', 'Year', 'Meningitis', 'Alzheimers_Disease_and_Other_Dementias', 'Parkinsons_Disease', 'Nutritional_Deficiencies', 'Malaria', 'Drowning', 'Interpersonal_Violence', 'Maternal_Disorders', 'HIV', 'Drug_Use_Disorders', 'Tuberculosis', 'Cardiovascular_Diseases', 'Lower_Respiratory_Infections', 'Neonatal_Disorders', 'Alcohol_Use_Disorders', 'Self_harm', 'Exposure_to_Forces_of_Nature', 'Diarrheal_Diseases', 'Environmental_Heat_and_Cold_Exposure', 'Neoplasms', 'Conflict_and_Terrorism', 'Diabetes_Mellitus', 'Chronic_Kidney_Disease', 'Poisonings', 'Protein_Energy_Malnutrition', 'Road_Injuries', 'Chronic_Respiratory_Diseases', 'Cirrhosis_and_Other_Chronic_Liver_Diseases', 'Digestive_Diseases', 'Fire_Heat_and_Hot_Substances', 'Acute_Hepatitis', 'Population']
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 #### Add Column Total amount of Death by Cause and Ratio of Death per Population
 
@@ -3586,11 +3628,471 @@ df_Main_data.head()
 </table>
 <p>5 rows × 38 columns</p>
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Death Cause Analysis
 - <a href="Markdown/Death_Cause_Analysis.md" target="_blank">Death Cause Analysis</a>
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Event Analysis
-- <a href="Markdown/Event_Analysis.md" target="_blank">Event Analysis</a>
+
+### Detail of Event during 1990 - 2019
+
+Events That Increased Mortality Rates
+1. **HIV/AIDS Epidemic**: 1990 - Throughout the 1990s, particularly in Africa and Asia.
+ - [WHO HIV/AIDS page](https://www.who.int/health-topics/hiv-aids#tab=tab_1)
+ - [40 Years of AIDS](https://www.ucsf.edu/news/2021/06/420686/40-years-aids-timeline-epidemic)
+2. **Malaria Outbreak in Africa**: 1990s and 2000s - The African region experienced high malaria mortality rates until the distribution of bed nets and antimalarial medications helped reduce deaths. [WHO Malaria Overview](https://www.who.int/health-topics/malaria)
+3. **Yugoslav Wars**: 1991-2001 - Conflicts and civil wars in Yugoslavia resulted in numerous fatalities.[BBC's Balkans Conflict Overview](https://www.bbc.com/news/world-europe-17632399)
+4. **Rwandan Genocide**: 1994 - This event led to over 800,000 deaths within a few months.[UN - Rwanda Genocide](https://www.un.org/en/preventgenocide/rwanda/education/rwandagenocide.shtml)
+5. **Food Shortage in North Korea**: 1994-1998 - Severe food shortages in North Korea resulted in significant loss of life due to famine.[Council on Foreign Relations - North Korea Famine](https://www.cfr.org/backgrounder/north-korea-famine)
+6. **Kobe Earthquake, Japan**: 1995 - Claimed the lives of over 6,000 people.[1995 Kobe Earthquake](https://factsanddetails.com/japan/cat26/sub160/item863.html)
+7. **Sierra Leone Civil War**: 1991-2002 - The violence from the civil war caused many deaths and displaced persons.[Sierra Leone Civil War](https://www.blackpast.org/global-african-history/sierra-leone-civil-war-1991-2002/)
+8. **Tuberculosis (TB) Resurgence**: Throughout the 1990s - TB re-emerged as a global health threat in many countries.[Tuberculosis](https://bmcinfectdis.biomedcentral.com/articles/10.1186/s12879-024-09079-5)
+9. **War in Afghanistan**: 2001-Present - Ongoing conflict in Afghanistan has resulted in continuous casualties from fighting and airstrikes.[BBC - War in Afghanistan](https://www.bbc.com/news/world-south-asia-11451718)
+10. **Indian Ocean Earthquake and Tsunami**: 2004 - Claimed over 230,000 lives across several countries.[Tsunami Report](https://www.britannica.com/event/Indian-Ocean-tsunami-of-2004)
+11. **Pakistan Earthquake**: 2005 - A major earthquake resulted in approximately 80,000 deaths in Pakistan.[2005 Pakistan Earthquake](https://www.britannica.com/event/Kashmir-earthquake-of-2005)
+12. **Iraq War**: 2003-2011 - Wars and conflicts in Iraq led to significant mortality.[Iraq War](https://www.britannica.com/event/Iraq-War)
+13. **Cyclone Nargis in Myanmar**: 2008 - The cyclone resulted in over 130,000 deaths in Myanmar.[Cyclone Nargis](https://reliefweb.int/report/myanmar/myanmar-cyclone-nargis-2008-facts-and-figures#:~:text=Facts%20and%20figures%20On%202%20May%202008%2C%20Cyclone,37%20townships%20were%20significantly%20affected%20by%20the%20cyclone.)
+14. **H1N1 Influenza**: 2009 - The H1N1 virus outbreak resulted in global fatalities.[H1N1 Pandemic](https://www.britannica.com/event/influenza-pandemic-H1N1-of-2009/Pandemic-status-and-response)
+15. **SARS Epidemic**: 2002-2003 - The SARS virus caused several hundred deaths worldwide.[WHO - SARS](https://www.who.int/health-topics/severe-acute-respiratory-syndrome#tab=tab_1)
+16. **Syrian Civil War**: 2011-Present - The conflict in Syria has resulted in numerous fatalities.[UNHCR - Syrian Refugee Crisis](https://www.unhcr.org/syria-emergency.html)
+17. **Hurricane Katrina**: 2005 - The devastating hurricane in the United States caused significant loss of life and damage.[Hurricane Katrina](https://www.britannica.com/event/Hurricane-Katrina#:~:text=Hurricane%20Katrina%2C%20tropical%20cyclone%20that%20struck%20the%20southeastern,percent%20between%20the%20fall%20of%202005%20and%202011.)
+18. **Wildfires in Russia**: 2010 - Wildfires and the subsequent heatwave led to numerous respiratory-related deaths.[Russia Wildfires](https://reliefweb.int/disaster/wf-2010-000147-rus#:~:text=Unusual%20and%20long%20heat%20waves%20with%20temperatures%20peaking,of%20land%20and%20killing%20more%20than%2050%20people.)
+19. **Haiti Earthquake**: 2010 - One of the deadliest earthquakes, resulting in over 200,000 deaths.[Haiti Earthquake](https://www.britannica.com/event/2010-Haiti-earthquake)
+20. **Dengue Fever Outbreak in Southeast Asia**: 2010-2019 - Resulted in significant fatalities, especially in the Philippines and Vietnam.[Dengue](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9848297/)
+21. **Famine in Africa**: Particularly in Somalia, 2011 - Resulted in tens of thousands of deaths due to severe food shortages.[Somalia Famine](https://charityandsecurity.org/humanitarian-safeguards/somalia-2011-famine-and-its-response/#:~:text=The%202011%20Famine%20Following%20months%20of%20drought%2C%20rising,Lower%20Shabelle%2C%20were%20experiencing%20famine%20in%20July%202011.)
+22. **Heatwave in Europe**: 2013 - The heatwave caused deaths related to high temperatures, especially in France and Germany.[Heatwaves](https://academic.oup.com/eurpub/article/16/6/592/587672)
+23. **Ebola Outbreak**: 2014-2016 - A major outbreak in West Africa resulted in tens of thousands of deaths.[Ebola](https://www.sciencedirect.com/science/article/pii/S1876034120304275)
+24. **Nepal Earthquake**: 2015 - A major earthquake resulted in over 9,000 deaths.[Nepal Earthquake](https://www.britannica.com/topic/Nepal-earthquake-of-2015)
+25. **Dengue Fever Epidemic**: Throughout the 2010s - The dengue outbreak in Asia and South America resulted in numerous fatalities.[WHO - Dengue](https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue)
+
+Events That Decreased Mortality Rates
+1. **HIV/AIDS Prevention Campaign**: 1990-1999 - Campaigns promoting condom use and regular health checks, along with the development of antiretroviral drugs, helped reduce AIDS mortality rates in developed countries and some countries in Africa and Asia.[HIV/AIDS](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8363183/)
+2. **Expansion of Childhood Vaccination**: 1990s - Widespread vaccination against measles, polio, and pneumonia significantly reduced child mortality rates from infectious diseases.[Immunization](https://publications.aap.org/pediatrics/article/150/3/e2021056013/188495/Impact-of-Routine-Childhood-Immunization-in?autologincheck=redirected)
+3. **Access to Antiretroviral Drugs for HIV/AIDS**: 2000-2009 - Countries began to widely access antiretroviral medications, particularly in Africa, leading to a decrease in mortality from this disease.[HIV Update](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3078828/)
+4. **Development of Malaria Vaccines**: 2000-2009 - The use of bed nets and insecticides, along with access to antimalarial drugs, helped reduce malaria mortality in Africa.[WHO Malaria Report](https://www.who.int/news-room/fact-sheets/detail/malaria)
+5. **Use of Anticoagulants and Treatments for Cardiovascular Diseases**: 2000-2009 - Advances in medical technology and treatment for heart diseases reduced mortality rates from cardiovascular diseases in many countries.[Cardiovascular](https://pubmed.ncbi.nlm.nih.gov/19571765/)
+6. **Use of Influenza Vaccines and Antiviral Medications**: 2000-2009 - Influenza vaccines and access to antiviral medications improved the control of influenza outbreaks, reducing mortality.[Flu](https://pubmed.ncbi.nlm.nih.gov/20718130/)
+7. **Anti-Smoking Campaigns**: 2010-2019 - Many countries initiated anti-smoking policies, helping reduce deaths from lung-related diseases such as lung cancer and chronic obstructive pulmonary disease (COPD).[WHO - Tobacco](https://www.who.int/campaigns/world-no-tobacco-day/world-no-tobacco-day-2019/about-the-campaign)
+8. **Improved Access to Cancer Treatments**: 2010-2019 - Chemotherapy and new technology treatments reduced cancer mortality in developed countries.[Cancer Treatments](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8366192/)
+9. **Traffic Safety Campaigns**: 2010-2019 - Campaigns promoting seatbelt use, helmet use, and speed limit laws in many countries helped reduce traffic fatalities.[Road Safety](https://www.sciencedirect.com/science/article/pii/S0386111211000045)
+10. **Development of HPV Vaccines**: 2007-2009 - Vaccination against the HPV virus, which causes cervical cancer, helped reduce cervical cancer mortality rates in many countries.[HPV](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8828558/)
+11. **Access to Clean Drinking Water**: 2000-2010 - Clean water and sanitation projects in many countries, especially in Africa and Asia, significantly reduced mortality rates from waterborne diseases, such as diarrhea.
+   - [INDIA Water Portal](https://www.indiawaterportal.org/health-and-sanitation/sanitation/2010-unwater-global-annual-assessment-sanitation-and-drinkingwater-glaas)
+   - [Our World in Data](https://ourworldindata.org/diarrheal-diseases)
+
+Events in Thailand
+Events that Increased Mortality Rates:
+1. **HIV/AIDS Epidemic (1990s - Early 2000s)**: Thailand was heavily affected by the HIV/AIDS crisis in the 1990s before access to antiretroviral drugs began to reduce deaths in the following decade.[UNAIDS - Thailand](https://www.unaids.org/en/regionscountries/countries/thailand)
+2. **Indian Ocean Tsunami (2004)**: The tsunami that hit southern Thailand in 2004 resulted in approximately 5,400 deaths.[Tsunami Report](https://www.britannica.com/event/Indian-Ocean-tsunami-of-2004)
+3. **Severe Flooding in Thailand (2011)**: The massive flooding in central and northern Thailand resulted in hundreds of fatalities.[Thailand Floods](https://www.thaiwater.net/uploads/contents/current/2011/flood54Eng.html)
+
+Events that Decreased Mortality Rates:
+1. **Universal Health Coverage Scheme (2002)**: The introduction of the Universal Health Coverage scheme in 2002 improved access to healthcare services, resulting in a decrease in mortality from preventable and treatable diseases.[Thailand UHC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6560367/)
+2. **Reduction in Maternal and Infant Mortality Rates (2000s)**: Increased investments in maternal and infant health programs led to lower mortality rates.[WHO - Thailand UHC](https://www.who.int/news/item/09-05-2023-global-progress-in-tackling-maternal-and-newborn-deaths-stalls-since-2015--un)
+3. **Decrease in Malaria Deaths (2000s)**: Malaria prevention campaigns, especially in border areas, significantly reduced malaria-related deaths.[Malaria in Thailand](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6553898/)
+4. **Advances in Treatment and Prevention of Cardiovascular Diseases (1990s)**: Improved treatment methods and anti-smoking campaigns in the 2000s contributed to reduced mortality rates from cardiovascular diseases.[WHO - Cardiovascular Diseases](https://www.who.int/health-topics/cardiovascular-diseases)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<b>Make time line for the Event during 1990 - 2019</b>
+
+
+```python
+import plotly.express as px
+import pandas as pd
+
+# ตัวอย่างข้อมูลเหตุการณ์
+events = [
+    {"event": "HIV/AIDS Epidemic", "start": 1990, "end": 2005, "category": "Increase"},
+    {"event": "Malaria Outbreak in Africa", "start": 1990, "end": 2000, "category": "Increase"},
+    {"event": "Yugoslav Wars", "start": 1991, "end": 2001, "category": "Increase"},
+    {"event": "Rwandan Genocide", "start": 1994, "end": 1994, "category": "Increase"},
+    {"event": "Food Shortage in North Korea", "start": 1994, "end": 1998, "category": "Increase"},
+    {"event": "Kobe Earthquake, Japan", "start": 1995, "end": 1995, "category": "Increase"},
+    {"event": "Sierra Leone Civil War", "start": 1991, "end": 2002, "category": "Increase"},
+    {"event": "Tuberculosis (TB) Resurgence", "start": 1990, "end": 1999, "category": "Increase"},
+    {"event": "War in Afghanistan", "start": 2001, "end": 2023, "category": "Increase"},
+    {"event": "Indian Ocean Earthquake and Tsunami", "start": 2004, "end": 2004, "category": "Increase"},
+    {"event": "Pakistan Earthquake", "start": 2005, "end": 2005, "category": "Increase"},
+    {"event": "Iraq War", "start": 2003, "end": 2011, "category": "Increase"},
+    {"event": "Cyclone Nargis in Myanmar", "start": 2008, "end": 2008, "category": "Increase"},
+    {"event": "H1N1 Influenza", "start": 2009, "end": 2009, "category": "Increase"},
+    {"event": "SARS Epidemic", "start": 2002, "end": 2003, "category": "Increase"},
+    {"event": "Syrian Civil War", "start": 2011, "end": 2023, "category": "Increase"},
+    {"event": "Hurricane Katrina", "start": 2005, "end": 2005, "category": "Increase"},
+    {"event": "Wildfires in Russia", "start": 2010, "end": 2010, "category": "Increase"},
+    {"event": "Haiti Earthquake", "start": 2010, "end": 2010, "category": "Increase"},
+    {"event": "Dengue Fever Outbreak in Southeast Asia", "start": 2010, "end": 2019, "category": "Increase"},
+    {"event": "Famine in Africa", "start": 2011, "end": 2011, "category": "Increase"},
+    {"event": "Heatwave in Europe", "start": 2013, "end": 2013, "category": "Increase"},
+    {"event": "Ebola Outbreak", "start": 2014, "end": 2016, "category": "Increase"},
+    {"event": "Nepal Earthquake", "start": 2015, "end": 2015, "category": "Increase"},
+    {"event": "Dengue Fever Epidemic", "start": 2010, "end": 2019, "category": "Increase"},
+    {"event": "HIV/AIDS Prevention Campaign", "start": 1990, "end": 1999, "category": "Decrease"},
+    {"event": "Expansion of Childhood Vaccination", "start": 1990, "end": 1999, "category": "Decrease"},
+    {"event": "Access to Antiretroviral Drugs for HIV/AIDS", "start": 2000, "end": 2009, "category": "Decrease"},
+    {"event": "Development of Malaria Vaccines", "start": 2000, "end": 2009, "category": "Decrease"},
+    {"event": "Use of Anticoagulants and Treatments for Cardiovascular Diseases", "start": 2000, "end": 2009, "category": "Decrease"},
+    {"event": "Use of Influenza Vaccines and Antiviral Medications", "start": 2000, "end": 2009, "category": "Decrease"},
+    {"event": "Anti-Smoking Campaigns", "start": 2010, "end": 2019, "category": "Decrease"},
+    {"event": "Improved Access to Cancer Treatments", "start": 2010, "end": 2019, "category": "Decrease"},
+    {"event": "Traffic Safety Campaigns", "start": 2010, "end": 2019, "category": "Decrease"},
+    {"event": "Development of HPV Vaccines", "start": 2007, "end": 2009, "category": "Decrease"},
+    {"event": "Access to Clean Drinking Water", "start": 2000, "end": 2010, "category": "Decrease"},
+    {"event": "HIV/AIDS Epidemic in Thailand", "start": 1990, "end": 2000, "category": "Increase"},
+    {"event": "Indian Ocean Tsunami in Thailand", "start": 2004, "end": 2004, "category": "Increase"},
+    {"event": "Severe Flooding in Thailand", "start": 2011, "end": 2011, "category": "Increase"},
+    {"event": "Universal Health Coverage Scheme in Thailand", "start": 2002, "end": 2023, "category": "Decrease"},
+    {"event": "Reduction in Maternal and Infant Mortality Rates in Thailand", "start": 2000, "end": 2009, "category": "Decrease"},
+    {"event": "Decrease in Malaria Deaths in Thailand", "start": 2000, "end": 2009, "category": "Decrease"},
+    {"event": "Advances in Treatment and Prevention of Cardiovascular Diseases in Thailand", "start": 1990, "end": 2000, "category": "Decrease"}
+]
+
+# สร้าง DataFrame
+df = pd.DataFrame(events)
+
+# แปลงวันที่เป็น datetime objects
+df["start"] = pd.to_datetime(df["start"], format="%Y")
+df["end"] = pd.to_datetime(df["end"], format="%Y")
+
+# สร้าง DataFrame แยกสำหรับเหตุการณ์ที่เพิ่มขึ้นและลดลง
+df_increase = df[df["category"] == "Increase"]
+df_decrease = df[df["category"] == "Decrease"]
+
+# แยกกราฟเหตุการณ์ที่เพิ่มขึ้น
+df_increase_single_year = df_increase[df_increase["start"] == df_increase["end"]]
+df_increase_multi_year = df_increase[df_increase["start"] != df_increase["end"]]
+
+# สร้างกราฟระยะเวลาสำหรับเหตุการณ์ที่เพิ่มขึ้น (ปีเดียว) พร้อมสีแดง
+fig_increase_single_year = px.timeline(
+    df_increase_single_year,
+    x_start="start",
+    x_end="end",
+    y="event",
+    title="Timeline of Single-Year Events Increasing Mortality (1990-2023)",
+    color_discrete_sequence=["red"]  # กำหนดสีเป็นสีแดง
+)
+
+# สร้างกราฟระยะเวลาสำหรับเหตุการณ์ที่เพิ่มขึ้น (หลายปี) พร้อมสีแดง
+fig_increase_multi_year = px.timeline(
+    df_increase_multi_year,
+    x_start="start",
+    x_end="end",
+    y="event",
+    title="Timeline of Multi-Year Events Increasing Mortality (1990-2023)",
+    color_discrete_sequence=["red"]  # กำหนดสีเป็นสีแดง
+)
+
+# สร้างกราฟระยะเวลาสำหรับเหตุการณ์ที่ลดลง พร้อมสีเขียว
+fig_decrease = px.timeline(
+    df_decrease,
+    x_start="start",
+    x_end="end",
+    y="event",
+    title="Timeline of Events Decreasing Mortality (1990-2023)",
+    color_discrete_sequence=["#0000FF"]  # กำหนดสีเป็นสีเขียว
+)
+
+# จัดเรียงเหตุการณ์ตามเวลา
+fig_increase_single_year.update_yaxes(categoryorder="total ascending")
+fig_increase_multi_year.update_yaxes(categoryorder="total ascending")
+fig_decrease.update_yaxes(categoryorder="total ascending")
+
+# ตั้งค่า x-axis ให้ครอบคลุมเหตุการณ์ทั้งหมด
+fig_increase_single_year.update_layout(xaxis_range=[df["start"].min(), df["end"].max()])
+fig_increase_multi_year.update_layout(xaxis_range=[df["start"].min(), df["end"].max()])
+fig_decrease.update_layout(xaxis_range=[df["start"].min(), df["end"].max()])
+
+# เพิ่ม categoryarray เพื่อให้แสดงทุกเหตุการณ์ในแกน Y
+fig_increase_single_year.update_yaxes(categoryarray=df_increase_single_year['event'])
+fig_increase_multi_year.update_yaxes(categoryarray=df_increase_multi_year['event'])
+fig_decrease.update_yaxes(categoryarray=df_decrease['event'])
+
+# เพิ่มจุดปีลงไปในกราฟ
+for index, row in df_increase_single_year.iterrows():
+    fig_increase_single_year.add_annotation(
+        x=row["start"],
+        y=row["event"],
+        text=str(row["start"].year),
+        showarrow=True,
+        arrowhead=2,
+        ax=0,
+        ay=-40,
+        font=dict(size=10),
+        bgcolor="white",
+        bordercolor="black",
+        borderwidth=1,
+        borderpad=4,
+    )
+
+
+# เพิ่ม grid แนวนอน
+fig_increase_single_year.update_yaxes(showgrid=True)
+
+# แสดงกราฟ
+fig_increase_single_year.show()
+fig_increase_multi_year.show()
+fig_decrease.show()
+
+```
+
+![png](Markdown/Event_Analysis_files/Event_Duration_1990-2023_Single.png)
+
+![png](Markdown/Event_Analysis_files/Event_Duration_1990-2023_Multi.png)
+
+![png](Markdown/Event_Analysis_files/Event_Decrease_1990_2023.png)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Event for analyze
+
+ในช่วงระยะเวลาที่ผ่านมา ประวัติศาสตร์โลกได้ผ่านพ้นเหตุการณ์ที่สำคัญมากมาย ซึ่งไม่เพียงแต่ส่งผลกระทบต่อชีวิตและความเป็นอยู่ของประชาชนในพื้นที่ที่เกิดเหตุการณ์เท่านั้น แต่ยังมีผลกระทบต่อสุขภาพของประชากรโลกในวงกว้าง โดยเฉพาะอย่างยิ่งเหตุการณ์ที่เกิดขึ้นระหว่างปี 1990-2010 เช่น การระบาดของโรค HIV/AIDS, การฆ่าล้างเผ่าพันธุ์ในรวันดา, และภัยพิบัติจากแผ่นดินไหวและสึนามิในเอเชีย
+
+เหตุการณ์เหล่านี้ถูกเลือกเพื่อการวิเคราะห์เนื่องจากความสัมพันธ์ที่ชัดเจนกับอัตราการเสียชีวิต รวมถึงการดำเนินการแก้ไขปัญหาที่ส่งผลต่อการพัฒนาในด้านสุขภาพและคุณภาพชีวิตของประชาชน เช่น การเข้าถึงยาต้านไวรัส HIV/AIDS, การพัฒนาวัคซีนมาลาเรีย, และความพยายามในการจัดการน้ำดื่มที่สะอาด ซึ่งล้วนแต่มีผลกระทบที่สำคัญต่อการลดอัตราการเสียชีวิตจากโรคที่สามารถป้องกันได้
+
+การเลือกเหตุการณ์เหล่านี้ช่วยให้เราเข้าใจถึงความซับซ้อนของการพัฒนาในด้านสุขภาพโลก และวิธีการที่เหตุการณ์แต่ละอย่างมีผลต่อกันในบริบทที่กว้างขึ้น โดยการวิเคราะห์ความสัมพันธ์ระหว่างเหตุการณ์เหล่านี้และการเปลี่ยนแปลงในอัตราการเสียชีวิต เราจะสามารถให้ข้อมูลเชิงลึกที่มีคุณค่าและเป็นประโยชน์ในการพัฒนานโยบายและกลยุทธ์เพื่อสุขภาพในอนาคต
+
+**Events That Increased Mortality Rates**
+
+1. **HIV/AIDS Pandemic (1990s - early 2000s)**  
+   - Increased mortality globally, especially in Sub-Saharan Africa.  
+   - [WHO HIV Statistics](https://www.who.int/health-topics/hiv-aids#tab=tab_1)
+   
+2. **Rwandan Genocide (1994)**  
+   - Over 800,000 people were killed in just a few months due to ethnic violence.  
+   - [UN Report on Rwanda](https://www.un.org/en/preventgenocide/rwanda)
+
+2. **Asian Tsunami (2004)**  
+   - Affected Southeast Asia, causing over 230,000 deaths.  
+   - [NOAA Tsunami Report](https://www.noaa.gov/news/15-years-after-deadly-tsunami-world-better-prepared-for-disasters)
+
+**Events That Decreased Mortality Rates**
+
+1. **Access to Antiretroviral Drugs for HIV/AIDS** (2000-2009)
+   - Widespread access to antiretroviral therapy (ART) greatly reduced the death rate from HIV/AIDS.  
+   - [UNAIDS HIV Update](https://www.unaids.org/en/resources/fact-sheet)
+
+2. **Development of Malaria Vaccines** (2000-2009)
+   - Use of insecticide-treated bed nets and anti-malaria programs led to a significant decline.  
+   - [WHO Malaria Report](https://www.who.int/news-room/fact-sheets/detail/malaria)
+
+3. **Access to Clean Drinking Water** (2000-2010)
+   - Global initiatives to provide clean water reduced mortality from waterborne diseases like cholera, dysentery, and diarrhea..  
+   - [INDIA Water Portal](https://www.indiawaterportal.org/health-and-sanitation/sanitation/2010-unwater-global-annual-assessment-sanitation-and-drinkingwater-glaas)
+   - [Our World in Data](https://ourworldindata.org/diarrheal-diseases)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+#### HIV
+
+
+```python
+# prompt: plot graph HIV by year for continent
+
+# Assuming 'df_Main_data' is your DataFrame containing the HIV data
+# and it has columns like 'Year', 'Continent', and 'HIV_Deaths'
+
+# Group data by year and continent, summing HIV deaths
+hiv_by_year_continent = df_Main_data.groupby(['Year', 'Continent'])['HIV'].sum().reset_index()
+
+# Create the plot using Plotly Express
+fig = px.line(hiv_by_year_continent, x='Year', y='HIV', color='Continent',
+             title='HIV Deaths by Year and Continent')
+fig.show()
+```
+![png](Markdown/Event_Analysis_files/HIV.png)
+
+
+
+HIV นั้นถูกค้นพบครั้งแรกในช่วงปี 1980s และแพร่ระบาดไปทั่วโลก โดยเฉพาะอย่างยิ่ง ในแถบแอฟริกาตอนใต้ จากเหตุการณ์ดังกล่าวพบว่ากราฟในช่วงปี 1990s-2000s มีการเสียชีวิตจากโรค HIV เพิ่มขึ้น โดยเฉพาะในแถบแอฟริกา จึงทำให้ในช่วงปี 2000 - 2009 ได้มีการรณรงค์ให้ความรู้เกี่ยวกับการใช้ถุงยางอนามัยและการตรวจสุขภาพเป็นประจำช่วยลดอัตราการเสียชีวิตจากโรค HIV/AIDS ในหลายประเทศ โดยเฉพาะอย่างยิ่งในแถบแอฟริกา ซึ่งสอดคล้องกับกราฟสถิติการตายของโรค HIV ดังด้านบน
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+#### Rwanda Genocide
+
+
+```python
+# prompt: plot graph conflict_and_terrorism of rwanda by year
+
+# Filter for Rwanda
+df_rwanda = df_Main_data[df_Main_data['Code'] == 'RWA']
+
+# Group by year and sum conflict and terrorism deaths
+df_rwanda_conflict = df_rwanda.groupby('Year')['Conflict_and_Terrorism'].sum().reset_index()
+
+# Plot the graph
+fig = px.line(df_rwanda_conflict, x='Year', y='Conflict_and_Terrorism',
+             title='Conflict and Terrorism Deaths in Rwanda by Year')
+fig.show()
+```
+
+![png](Markdown/Event_Analysis_files/Rwanda.png)
+
+
+ในปี 1994 เกิดเหตุการณ์ฆ่าล้างเผ่าพันธุ์ซึ่งเกิดขึ้นจากความขัดแย้งทางชาติพันธุ์ระหว่างสองกลุ่มหลักในรวันดา เหตุการณ์นี้นำไปสู่การเสียชีวิตของประชาชนกว่า 800,000 คน ภายในระยะเวลาเพียง 100 วัน ส่งผลทำให้กราฟการเสียชีวิตจาก Conflict and Terrorism เพิ่มขึ้นอย่างมีนัยสำคัญในปี 1994 ดังกราฟข้างต้น
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+#### Asian Tsunami
+
+
+```python
+# prompt: plot graph Exposure to forces of nature by year for asia
+
+# Assuming 'df_Main_data' is your DataFrame containing the data
+# and it has columns like 'Year', 'Continent', and 'Exposure_to_Forces_of_Nature'
+
+# Filter for Asia
+df_asia = df_Main_data[df_Main_data['Continent'] == 'Asia']
+
+# Group data by year, summing Exposure_to_Forces_of_Nature
+exposure_by_year_asia = df_asia.groupby(['Year'])['Exposure_to_Forces_of_Nature'].sum().reset_index()
+
+# Create the plot using Plotly Express
+fig = px.line(exposure_by_year_asia, x='Year', y='Exposure_to_Forces_of_Nature',
+             title='Exposure to Forces of Nature by Year for Asia')
+fig.show()
+```
+
+
+![png](Markdown/Event_Analysis_files/Asia_Tsunami.png)
+
+
+
+```python
+# prompt: plot graph Exposure to forces of nature top 10 country for year 2004
+
+# Assuming df_Main_data is your DataFrame
+df_2004 = df_Main_data[df_Main_data['Year'] == 2004]
+
+# Sort by Exposure_to_Forces_of_Nature in descending order
+top_10_2004 = df_2004.sort_values('Exposure_to_Forces_of_Nature', ascending=False).head(10)
+
+# Create a bar plot
+plt.figure(figsize=(12, 6))
+plt.bar(top_10_2004['Country'], top_10_2004['Exposure_to_Forces_of_Nature'])
+plt.xlabel('Country')
+plt.ylabel('Exposure to Forces of Nature')
+plt.title('Top 10 Countries with Highest Exposure to Forces of Nature in 2004')
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.show()
+```
+
+
+    
+![png](Markdown/Event_Analysis_files/Event_Analysis_89_0.png)
+    
+
+
+ในวันที่ 26 ธันวาคม 2004 เกิดแผ่นดินไหวขนาด 9.1-9.3 แมกนิจูด นอกชายฝั่งของเกาะสุมาตรา ประเทศอินโดนีเซีย ทำให้เกิดคลื่นสึนามิขนาดใหญ่ที่ซัดเข้าถล่มชายฝั่งของหลายประเทศรอบมหาสมุทรอินเดีย ส่งผลให้มีผู้เสียชีวิตจำนวนมาก และสร้างความเสียหายทางทรัพย์สินอย่างมหาศาล เห็นได้ดังกราฟข้างต้น
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+#### Malaria
+
+
+```python
+# prompt: plot graph Malaria by year for continent
+
+# Assuming df_Main_data is your DataFrame
+# and it has columns like 'Year', 'Continent', and 'Malaria_Deaths'
+
+# Group data by year and continent, summing Malaria deaths
+malaria_by_year_continent = df_Main_data.groupby(['Year', 'Continent'])['Malaria'].sum().reset_index()
+
+# Create the plot using Plotly Express
+fig = px.line(malaria_by_year_continent, x='Year', y='Malaria', color='Continent',
+             title='Malaria Deaths by Year and Continent')
+fig.show()
+```
+![png](Markdown/Event_Analysis_files/Malaria.png)
+
+
+โรคมาลาเรียเป็นหนึ่งในโรคติดเชื้อที่ร้ายแรงที่สุดในโลก โดยเฉพาะในภูมิภาคเขตร้อนและกึ่งเขตร้อน ซึ่งแพร่เชื้อสู่มนุษย์ผ่านการกัดของยุงก้นปล่อง ช่วงปี 2000 - 2009 เป็นช่วงเวลาที่มีความก้าวหน้าอย่างมากในการพัฒนาวัคซีนมาลาเรีย แม้จะยังไม่สามารถป้องกันโรคได้อย่างสมบูรณ์ แต่การวิจัยและการทดสอบวัคซีน ก็ถือเป็นก้าวสำคัญที่ช่วยให้เกิดการพัฒนาในอนาคต เห็นได้จากกราฟข้างต้น ที่มีการลดลงของการเสียชีวิตของโรค Malaria ภายหลังช่วงปี 2009 เป็นต้นไป
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+#### Diarrheal
+
+
+```python
+# prompt: plot graph Diarrheal diseases by year for continent
+
+# Assuming df_Main_data is your DataFrame
+# and it has columns like 'Year', 'Continent', and 'Diarrheal_diseases_Deaths'
+
+# Group data by year and continent, summing Diarrheal diseases deaths
+diarrheal_by_year_continent = df_Main_data.groupby(['Year', 'Continent'])['Diarrheal_Diseases'].sum().reset_index()
+
+# Create the plot using Plotly Express
+fig = px.line(diarrheal_by_year_continent, x='Year', y='Diarrheal_Diseases', color='Continent',
+             title='Diarrheal diseases Deaths by Year and Continent')
+fig.show()
+```
+
+![png](Markdown/Event_Analysis_files/Diarrheal.png)
+
+
+```python
+# prompt: plot line graph top 5 country in Asia by year for Diarrheal Diseases
+
+# Assuming df_Main_data is your DataFrame
+# and it has columns like 'Year', 'Country', and 'Diarrheal_Diseases'
+
+# Filter for Asia
+df_asia = df_Main_data[df_Main_data['Continent'] == 'Asia']
+
+# Group data by year and country, summing Diarrheal diseases deaths
+diarrheal_by_year_country_asia = df_asia.groupby(['Year', 'Country'])['Diarrheal_Diseases'].sum().reset_index()
+
+# Find top 5 countries in Asia by total Diarrheal diseases deaths across all years
+top_5_countries = diarrheal_by_year_country_asia.groupby('Country')['Diarrheal_Diseases'].sum().nlargest(5).index.tolist()
+
+# Filter data for the top 5 countries
+df_top_5 = diarrheal_by_year_country_asia[diarrheal_by_year_country_asia['Country'].isin(top_5_countries)]
+
+# Create the plot using Plotly Express
+fig = px.line(df_top_5, x='Year', y='Diarrheal_Diseases', color='Country',
+             title='Top 5 Countries in Asia by Diarrheal Diseases Deaths (1990-2019)')
+fig.show()
+```
+
+![png](Markdown/Event_Analysis_files/TopContries_Diarrheal_Asia.png)
+
+
+```python
+# prompt: plot line graph top 5 country in Africa by year for Diarrheal Diseases
+
+# Assuming df_Main_data is your DataFrame
+# and it has columns like 'Year', 'Country', and 'Diarrheal_Diseases'
+
+# Filter for Africa
+df_africa = df_Main_data[df_Main_data['Continent'] == 'Africa']
+
+# Group data by year and country, summing Diarrheal diseases deaths
+diarrheal_by_year_country_africa = df_africa.groupby(['Year', 'Country'])['Diarrheal_Diseases'].sum().reset_index()
+
+# Find top 5 countries in Africa by total Diarrheal diseases deaths across all years
+top_5_countries = diarrheal_by_year_country_africa.groupby('Country')['Diarrheal_Diseases'].sum().nlargest(5).index.tolist()
+
+# Filter data for the top 5 countries
+df_top_5 = diarrheal_by_year_country_africa[diarrheal_by_year_country_africa['Country'].isin(top_5_countries)]
+
+# Create the plot using Plotly Express
+fig = px.line(df_top_5, x='Year', y='Diarrheal_Diseases', color='Country',
+             title='Top 5 Countries in Africa by Diarrheal Diseases Deaths (1990-2019)')
+fig.show()
+```
+![png](Markdown/Event_Analysis_files/TopContries_Diarrheal_Afarica.png)
+
+
+โรคท้องร่วงเป็นหนึ่งในสาเหตุสำคัญของการเสียชีวิตของประชากรโลก เนื่องจากการขาดความเข้าถึงของน้ำสะอาดและการมีสุขาภิบาลที่ดี ในช่วงปี 2000-2010 จึงมีการริเริ่มโครงการระดับโลกที่มุ่งเน้นการเพิ่มการเข้าถึงน้ำดื่มที่สะอาดเพื่อลดการเสียชีวิตจากโรคที่เกี่ยวกับน้ำ ส่งผลให้การเสียชีวิตจากโรคท้องร่วงลดลงอย่างมีนัยสำคัญ ซึ่งเห็นได้ดังกราฟข้างต้น
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Summary
 **สรุปภาพรวมการวิเคราะห์ข้อมูลการเสียชีวิตทั่วโลก (1990-2019)**
@@ -3602,3 +4104,5 @@ df_Main_data.head()
 ในทางกลับกัน เหตุการณ์ทางธรรมชาติ เช่น แผ่นดินไหวและสึนามิในปี 2004 ทำให้จำนวนผู้เสียชีวิตเพิ่มขึ้นอย่างรวดเร็วในบางพื้นที่ ซึ่งเป็นการเตือนให้เห็นถึงความสำคัญของการเตรียมความพร้อมและระบบการป้องกันภัยพิบัติ
 
 การวิเคราะห์ข้อมูลเหล่านี้ไม่เพียงแค่แสดงให้เห็นถึงความสัมพันธ์ระหว่างอัตราการเสียชีวิตและเหตุการณ์ต่าง ๆ แต่ยังสามารถนำไปประยุกต์ใช้เพื่อป้องกันและแก้ไขปัญหาที่อาจเกิดขึ้นในอนาคตได้อย่างมีประสิทธิภาพ โดยการพัฒนานโยบายและกลยุทธ์ที่มุ่งเน้นการลดความเสี่ยงและการป้องกันการเกิดโรคในประชากรที่เปราะบาง
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
